@@ -5,6 +5,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Toko Game Profesional</title>
   <style>
+    .hero-beranda{
+  min-height:70vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  background: url('images/gunung.jpg') center/cover no-repeat;
+  position:relative;
+  border-radius:20px;
+  margin-bottom:40px;
+}
+
+.hero-beranda::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:rgba(0,0,0,0.55);
+  border-radius:20px;
+}
+
+.hero-text{
+  position:relative;
+  z-index:1;
+  color:#fff;
+}
+
+.hero-text h2{
+  font-size:42px;
+  margin-bottom:15px;
+}
+
+.hero-text p{
+  font-size:18px;
+  margin-bottom:25px;
+}
+
+.btn-hero{
+  display:inline-block;
+  padding:14px 30px;
+  background:#28a745;
+  color:#fff;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:600;
+}
+
+.btn-hero:hover{
+  background:#1e7e34;
+}
+
     * { box-sizing: border-box; }
     body {
   margin:0;
@@ -90,16 +140,14 @@ header p {
 
 <div class="container">
 
-  <section class="hero">
-    <div>
-      <h2>Beli Game Original, Aman & Cepat</h2>
-      <p>Ribuan game PC, PlayStation, Xbox, dan layanan top up tersedia. Pengiriman instan & support 24 jam.</p>
-      <button onclick="alert('Fitur promo akan aktif')">Lihat Promo</button>
-    </div>
-    <img src="https://picsum.photos/600/400?game" alt="Hero Game">
-  </section>
+  <section class="hero-beranda">
+  <div class="hero-text">
+    <h2>GAMESTORE PRO</h2>
+    <p>Toko Game PC terpercaya, original, cepat & aman</p>
+    <a href="#game-pc" class="btn-hero">Lihat Semua Game PC</a>
+  </div>
+</section>
 
-  <h2 class="section">Game Terlaris</h2>
   <h2 class="section" id="game-pc">Semua Game PC</h2>
 
 <div class="games">
