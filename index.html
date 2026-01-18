@@ -76,12 +76,19 @@
 
   <h2 class="section">Game Terlaris</h2>
   <div class="games">
+<script>
+function orderWA(nama,harga){
+  const nomor = '6281234567890';
+  const pesan = `Halo Admin GAMESTORE PRO,%0ASaya ingin membeli game:%0A%0A🎮 Nama: ${nama}%0A💰 Harga: ${harga}%0A%0ATerima kasih.`;
+  window.open(`https://wa.me/${nomor}?text=${pesan}`,'_blank');
+}
+</script>
     <div class="card">
       <img src="https://picsum.photos/400/300?random=11">
       <div class="content">
         <h3>Cyber Adventure</h3>
         <p class="price">Rp 250.000</p>
-        <a class="btn" href="#">Tambah ke Keranjang</a>
+        <a class="btn" href="#">Pesan via WhatsApp</a>
       </div>
     </div>
 
@@ -90,7 +97,7 @@
       <div class="content">
         <h3>Racing Pro 2026</h3>
         <p class="price">Rp 320.000</p>
-        <a class="btn" href="#">Tambah ke Keranjang</a>
+        <a class="btn" href="#">Pesan via WhatsApp</a>
       </div>
     </div>
 
@@ -99,7 +106,7 @@
       <div class="content">
         <h3>Battle Arena X</h3>
         <p class="price">Rp 210.000</p>
-        <a class="btn" href="#">Tambah ke Keranjang</a>
+        <a class="btn" href="#">Pesan via WhatsApp</a>
       </div>
     </div>
   </div>
@@ -140,7 +147,7 @@
     </div>
     <div>
       <h4>Kontak</h4>
-      <p>WhatsApp: 0895352505993</p>
+      <p>WhatsApp: 08xxxxxxxx</p>
       <p>Email: support@gamestore.id</p>
     </div>
   </div>
@@ -149,7 +156,7 @@
 
 
 <!-- Tombol WhatsApp Floating -->
-<a href="https://wa.me/62895352505993?text=Halo%20Admin%20GAMESTORE%20PRO,%20saya%20ingin%20bertanya%20tentang%20game" target="_blank" class="wa-float">
+<a href="https://wa.me/6281234567890?text=Halo%20Admin%20GAMESTORE%20PRO,%20saya%20ingin%20bertanya%20tentang%20game" target="_blank" class="wa-float">
   💬 Chat WhatsApp
 </a>
 
